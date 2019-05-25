@@ -20,7 +20,7 @@
 		"getresponse/getresponse": "^0.0.2",
 		"drewm/mailchimp-api": "^v2.2.4",
 		"google/recaptcha": "^1.1",
-		"leafo/scssphp": "^0.7.1",
+		"leafo/scssphp": "^0.8.0",
 		"stil/gd-text": "^1.1",
 		"authorizenet/authorizenet": "^1.9",
 		"yahnis-elsts/plugin-update-checker": "^4.2",
