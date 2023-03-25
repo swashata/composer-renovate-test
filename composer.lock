@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5634d7c10cacc1c60343fd9def8af43a",
@@ -137,6 +137,7 @@
                 "client",
                 "email"
             ],
+            "abandoned": true,
             "time": "2017-09-13T17:29:18+00:00"
         },
         {
@@ -202,12 +203,12 @@
             "version": "v1.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/clue/php-stream-filter.git",
+                "url": "https://github.com/clue/stream-filter.git",
                 "reference": "d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/php-stream-filter/zipball/d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0",
+                "url": "https://api.github.com/repos/clue/stream-filter/zipball/d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0",
                 "reference": "d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0",
                 "shasum": ""
             },
@@ -219,12 +220,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Clue\\StreamFilter\\": "src/"
-                },
                 "files": [
                     "src/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Clue\\StreamFilter\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -246,6 +247,16 @@
                 "stream",
                 "stream_filter_append",
                 "stream_filter_register"
+            ],
+            "funding": [
+                {
+                    "url": "https://clue.engineering/support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
             ],
             "time": "2017-08-18T09:54:01+00:00"
         },
@@ -616,6 +627,7 @@
                 "email",
                 "getresponse"
             ],
+            "abandoned": "getresponse/sdk-php",
             "time": "2015-11-25T12:38:33+00:00"
         },
         {
@@ -750,12 +762,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1004,6 +1016,7 @@
                 "scss",
                 "stylesheet"
             ],
+            "abandoned": "scssphp/scssphp",
             "time": "2018-05-24T02:18:53+00:00"
         },
         {
@@ -1148,6 +1161,7 @@
                 "rest",
                 "sdk"
             ],
+            "abandoned": true,
             "time": "2017-11-13T19:21:59+00:00"
         },
         {
@@ -1370,12 +1384,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Http\\Message\\": "src/"
-                },
                 "files": [
                     "src/filters.php"
-                ]
+                ],
+                "psr-4": {
+                    "Http\\Message\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1805,12 +1819,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1897,20 +1911,25 @@
         },
         {
             "name": "twisted1919/mailwizz-php-sdk",
-            "version": "v1.0.2",
+            "version": "v1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twisted1919/mailwizz-php-sdk.git",
-                "reference": "8354e547328a683cfa1af010058cbb7e80b1106e"
+                "reference": "37444bbfd4cef0ccb496a38f83077505a8b24660"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twisted1919/mailwizz-php-sdk/zipball/8354e547328a683cfa1af010058cbb7e80b1106e",
-                "reference": "8354e547328a683cfa1af010058cbb7e80b1106e",
+                "url": "https://api.github.com/repos/twisted1919/mailwizz-php-sdk/zipball/37444bbfd4cef0ccb496a38f83077505a8b24660",
+                "reference": "37444bbfd4cef0ccb496a38f83077505a8b24660",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.15",
+                "phpstan/phpstan": "^0.12.9",
+                "phpunit/phpunit": "^7.5"
             },
             "type": "library",
             "autoload": {
@@ -1933,7 +1952,7 @@
             "keywords": [
                 "mailwizz"
             ],
-            "time": "2018-01-25T19:34:02+00:00"
+            "time": "2021-04-05T18:23:38+00:00"
         },
         {
             "name": "yahnis-elsts/plugin-update-checker",
@@ -1990,5 +2009,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
