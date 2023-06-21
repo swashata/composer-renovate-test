@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5634d7c10cacc1c60343fd9def8af43a",
@@ -137,20 +137,21 @@
                 "client",
                 "email"
             ],
+            "abandoned": true,
             "time": "2017-09-13T17:29:18+00:00"
         },
         {
             "name": "campaignmonitor/createsend-php",
-            "version": "v6.0.0",
+            "version": "v6.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/campaignmonitor/createsend-php.git",
-                "reference": "e343054ee25e4862cd408878c9e555b0a1e047e7"
+                "reference": "922cec7fbc9da1508c18156db7693a6ddad7194e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/campaignmonitor/createsend-php/zipball/e343054ee25e4862cd408878c9e555b0a1e047e7",
-                "reference": "e343054ee25e4862cd408878c9e555b0a1e047e7",
+                "url": "https://api.github.com/repos/campaignmonitor/createsend-php/zipball/922cec7fbc9da1508c18156db7693a6ddad7194e",
+                "reference": "922cec7fbc9da1508c18156db7693a6ddad7194e",
                 "shasum": ""
             },
             "require": {
@@ -174,7 +175,9 @@
                     "csrest_templates.php",
                     "csrest_transactional_classicemail.php",
                     "csrest_transactional_smartemail.php",
-                    "csrest_transactional_timeline.php"
+                    "csrest_transactional_timeline.php",
+                    "csrest_journeys.php",
+                    "csrest_journey_emails.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -195,19 +198,19 @@
                 "campaign",
                 "monitor"
             ],
-            "time": "2018-05-25T05:04:01+00:00"
+            "time": "2021-10-02T04:57:43+00:00"
         },
         {
             "name": "clue/stream-filter",
             "version": "v1.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/clue/php-stream-filter.git",
+                "url": "https://github.com/clue/stream-filter.git",
                 "reference": "d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/php-stream-filter/zipball/d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0",
+                "url": "https://api.github.com/repos/clue/stream-filter/zipball/d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0",
                 "reference": "d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0",
                 "shasum": ""
             },
@@ -219,12 +222,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Clue\\StreamFilter\\": "src/"
-                },
                 "files": [
                     "src/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Clue\\StreamFilter\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -246,6 +249,16 @@
                 "stream",
                 "stream_filter_append",
                 "stream_filter_register"
+            ],
+            "funding": [
+                {
+                    "url": "https://clue.engineering/support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
             ],
             "time": "2017-08-18T09:54:01+00:00"
         },
@@ -616,6 +629,7 @@
                 "email",
                 "getresponse"
             ],
+            "abandoned": "getresponse/sdk-php",
             "time": "2015-11-25T12:38:33+00:00"
         },
         {
@@ -750,12 +764,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1004,6 +1018,7 @@
                 "scss",
                 "stylesheet"
             ],
+            "abandoned": "scssphp/scssphp",
             "time": "2018-05-24T02:18:53+00:00"
         },
         {
@@ -1148,6 +1163,7 @@
                 "rest",
                 "sdk"
             ],
+            "abandoned": true,
             "time": "2017-11-13T19:21:59+00:00"
         },
         {
@@ -1370,12 +1386,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Http\\Message\\": "src/"
-                },
                 "files": [
                     "src/filters.php"
-                ]
+                ],
+                "psr-4": {
+                    "Http\\Message\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1805,12 +1821,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1990,5 +2006,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
