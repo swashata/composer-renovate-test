@@ -23,7 +23,7 @@
 		"leafo/scssphp": "^0.7.1",
 		"stil/gd-text": "^1.1",
 		"authorizenet/authorizenet": "^1.9",
-		"yahnis-elsts/plugin-update-checker": "^4.2",
+		"yahnis-elsts/plugin-update-checker": "^5.0",
 		"twisted1919/mailwizz-php-sdk": "^1.0",
 		"defuse/php-encryption": "^2.1"
     }
